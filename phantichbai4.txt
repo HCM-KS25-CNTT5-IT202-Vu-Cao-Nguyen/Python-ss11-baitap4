@@ -1,0 +1,103 @@
+Input
+
+Người dùng nhập:
+
+Dữ liệu	Kiểu
+Lựa chọn menu	str
+Mã sản phẩm	str
+Số lượng mua	int
+Số lượng nhập kho	int
+
+
+Output
+Hiển thị:
+
+Danh sách sản phẩm
+Trạng thái tồn kho
+Thông báo bán hàng thành công
+Thông báo nhập kho thành công
+Báo cáo doanh thu
+Các thông báo lỗi
+
+Đề xuất giải pháp
+Cấu trúc dữ liệu
+
+Sử dụng:
+
+list[dict]
+
+
+Các hàm cần xây dựng
+Chuẩn hóa mã sản phẩm
+def normalize_product_id(product_id):
+    return product_id.strip().upper()
+
+
+Tìm sản phẩm
+def find_product(product_id):
+
+Trả về sản phẩm nếu tìm thấy.
+
+Kiểm tra số nguyên dương
+def get_positive_integer(message):
+
+Kiểm tra:
+
+Không phải chữ
+Không âm
+Không bằng 0
+Xác định trạng thái tồn kho
+def get_stock_status(quantity):
+
+Quy tắc:
+
+quantity == 0
+=> Hết hàng
+
+quantity <= 5
+=> Sắp hết hàng
+
+quantity > 5
+=> Còn hàng
+Chức năng bán hàng
+
+Sau khi tìm được sản phẩm:
+
+product["quantity"] -= buy_quantity
+product["sold"] += buy_quantity
+
+Tính tiền:
+
+total_price = product["price"] * buy_quantity
+Chức năng nhập kho
+product["quantity"] += import_quantity
+Chức năng báo cáo doanh thu
+
+Doanh thu từng sản phẩm:
+
+revenue = price * sold
+
+Tổng doanh thu:
+
+total_revenue += revenue
+
+Tìm sản phẩm bán chạy:
+
+max(product["sold"])
+
+
+
+Kiến thức được áp dụng
+list
+dictionary
+for
+while
+function
+enumerate()
+strip()
+upper()
+isdigit()
+Cập nhật dữ liệu dictionary
+Tìm kiếm phần tử trong list
+Thống kê doanh thu
+Xử lý đầy đủ các edge cases được yêu cầu.

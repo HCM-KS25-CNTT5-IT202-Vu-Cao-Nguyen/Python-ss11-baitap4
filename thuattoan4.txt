@@ -1,0 +1,67 @@
+Khởi tạo product_list
+
+Lặp vô hạn
+
+    Hiển thị menu
+
+    Nhập lựa chọn
+
+    Nếu nhập không phải số
+        Báo lỗi
+        quay lại menu
+
+    Nếu chọn 1
+        Hiển thị danh sách sản phẩm
+        Hiển thị trạng thái tồn kho
+
+    Nếu chọn 2
+        Nhập mã sản phẩm
+        Chuẩn hóa
+
+        Tìm sản phẩm
+
+        Nếu không tìm thấy
+            Báo lỗi
+
+        Nhập số lượng mua
+
+        Kiểm tra hợp lệ
+
+        Nếu vượt tồn kho
+            Báo lỗi
+
+        Trừ tồn kho
+        Tăng số lượng bán
+
+        Tính tiền
+
+        In hóa đơn
+
+    Nếu chọn 3
+        Nhập mã sản phẩm
+
+        Tìm sản phẩm
+
+        Nếu không tồn tại
+            Báo lỗi
+
+        Nhập số lượng nhập
+
+        Kiểm tra hợp lệ
+
+        Cộng thêm tồn kho
+
+    Nếu chọn 4
+        Tính doanh thu từng sản phẩm
+
+        Tính tổng doanh thu
+
+        Tìm sản phẩm bán chạy
+
+        Hiển thị báo cáo
+
+    Nếu chọn 5
+        Thoát chương trình
+
+    Ngược lại
+        Báo lỗi
